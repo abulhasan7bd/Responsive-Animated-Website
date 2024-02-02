@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --gray-red: #dc284e;
+  --gray-yellow: #f4d176;
+  --white: #ffffff;
+  --black: #262626;
+  --gray-second-yellow: #f4d176;
+  --home-background: #271334;
+  --public-font: "Public Sans", sans-serif;
+}
+
+.golobal__button button {
+  background-color: var(--gray-red);
+  border: none;
+  outline: none;
+  color: var(--white);
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: var(--public-font);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 15px 28px;
+  letter-spacing: 1px;
+  transition: all 0.4s;
+}
+.golobal__button button:hover {
+  background-color: var(--gray-second-yellow);
+  color: var(--black);
+}/*# sourceMappingURL=button.css.map */

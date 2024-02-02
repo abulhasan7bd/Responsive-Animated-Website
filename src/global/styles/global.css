@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --gray-red: #dc284e;
+  --gray-yellow: #f4d176;
+  --white: #ffffff;
+  --black: #262626;
+  --gray-second-yellow: #f4d176;
+  --home-background: #271334;
+  --public-font: "Public Sans", sans-serif;
+  --h2-title: 5rem;
+  --width: 100%;
+  --max-width: 1300px;
+  --padding: 0 80px;
+  --min-width: 300px;
+  --margin: auto;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --padding: 0 70px;
+  }
+}
+@media (max-width: 1000px) {
+  :root {
+    --padding: 0 60px;
+  }
+}
+@media (max-width: 900px) {
+  :root {
+    --padding: 0 50px;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    --h2-title: 4rem;
+  }
+}
+@media (max-width: 700px) {
+  :root {
+    --padding: 0 40px;
+    --h2-title: 3.4rem;
+  }
+}
+@media (max-width: 500px) {
+  :root {
+    --padding: 0 30px;
+    --h2-title: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  :root {
+    --padding: 0 10px;
+    --h2-title: 2.5rem;
+  }
+}
+@media (max-width: 300px) {
+  :root {
+    --padding: 0 8px;
+    --h2-title: 2rem;
+  }
+}/*# sourceMappingURL=global.css.map */

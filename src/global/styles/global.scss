@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  // color
+  --gray-red: #dc284e;
+  --gray-yellow: #f4d176;
+  --white: #ffffff;
+  --black: #262626;
+  --gray-second-yellow: #f4d176;
+  --home-background: #271334;
+
+  // font
+  --public-font: "Public Sans", sans-serif;
+
+  // font size
+  --h2-title: 5rem;
+
+  //   container
+  --width: 100%;
+  --max-width: 1300px;
+  --padding: 0 80px;
+  --min-width: 300px;
+  --margin: auto;
+}
+
+// responsive container for 1200px
+@media (max-width: 1200px) {
+  :root {
+    //   container
+    --padding: 0 70px;
+  }
+}
+
+// responsive container for 1000px
+@media (max-width: 1000px) {
+  :root {
+    //   container
+    --padding: 0 60px;
+  }
+}
+
+// responsive container for 900px
+@media (max-width: 900px) {
+  :root {
+    //   container
+    --padding: 0 50px;
+  }
+}
+
+// responsive container for 800px
+@media (max-width: 800px) {
+  :root {
+    --h2-title: 4rem;
+  }
+}
+
+// responsive container for 700px
+@media (max-width: 700px) {
+  :root {
+    //   container
+    --padding: 0 40px;
+    --h2-title: 3.4rem;
+  }
+}
+
+// responsive container for 700px
+@media (max-width: 500px) {
+  :root {
+    //   container
+    --padding: 0 30px;
+    --h2-title: 3rem;
+  }
+}
+
+// responsive container for 400px and less than 400xp
+@media (max-width: 400px) {
+  :root {
+    //   container
+    --padding: 0 10px;
+    --h2-title: 2.5rem;
+  }
+}
+
+// responsive container for 400px and less than 400xp
+@media (max-width: 300px) {
+  :root {
+    //   container
+    --padding: 0 8px;
+    --h2-title: 2rem;
+  }
+}
