@@ -8,6 +8,10 @@
   --home-background: #271334;
   --public-font: "Public Sans", sans-serif;
   --h2-title: 5rem;
+  --section-title: 2.875rem;
+  --subtitle: 1.35rem;
+  --subtitle2: 1.25rem;
+  --p-font: 1rem;
   --width: 100%;
   --max-width: 1300px;
   --padding: 0 80px;
@@ -20,9 +24,15 @@
     --padding: 0 70px;
   }
 }
+@media (max-width: 1100px) {
+  :root {
+    --section-title: 2.475rem;
+  }
+}
 @media (max-width: 1000px) {
   :root {
     --padding: 0 60px;
+    --section-title: 2.175rem;
   }
 }
 @media (max-width: 900px) {

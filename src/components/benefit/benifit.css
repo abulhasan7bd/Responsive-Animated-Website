@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --gray-red: #dc284e;
+  --gray-yellow: #f4d176;
+  --white: #ffffff;
+  --black: #262626;
+  --gray-second-yellow: #f4d176;
+  --home-background: #271334;
+  --public-font: "Public Sans", sans-serif;
+  --h2-title: 5rem;
+  --section-title: 2.875rem;
+  --subtitle: 1.35rem;
+  --subtitle2: 1.25rem;
+  --p-font: 1rem;
+  --width: 100%;
+  --max-width: 1300px;
+  --padding: 0 80px;
+  --min-width: 300px;
+  --margin: auto;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --padding: 0 70px;
+  }
+}
+@media (max-width: 1100px) {
+  :root {
+    --section-title: 2.475rem;
+  }
+}
+@media (max-width: 1000px) {
+  :root {
+    --padding: 0 60px;
+    --section-title: 2.175rem;
+  }
+}
+@media (max-width: 900px) {
+  :root {
+    --padding: 0 50px;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    --h2-title: 4rem;
+  }
+}
+@media (max-width: 700px) {
+  :root {
+    --padding: 0 40px;
+    --h2-title: 3.4rem;
+  }
+}
+@media (max-width: 500px) {
+  :root {
+    --padding: 0 30px;
+    --h2-title: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  :root {
+    --padding: 0 10px;
+    --h2-title: 2.5rem;
+  }
+}
+@media (max-width: 300px) {
+  :root {
+    --padding: 0 8px;
+    --h2-title: 2rem;
+  }
+}
+.benefit {
+  --gray-red: #dc284e;
+  --gray-yellow: #f4d176;
+  --white: #ffffff;
+  --black: #262626;
+  --gray-second-yellow: #f4d176;
+  --home-background: #271334;
+  --public-font: "Public Sans", sans-serif;
+  --h2-title: 5rem;
+  --section-title: 2.875rem;
+  --subtitle: 1.35rem;
+  --subtitle2: 1.25rem;
+  --p-font: 1rem;
+  background-image: url("https://template-kit.evonicmedia.com/layout60/wp-content/uploads/2024/01/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.benefit .container {
+  width: var(--width);
+  max-width: var(--max-width);
+  padding: var(--padding);
+  min-width: var(min-width);
+  margin: var(--margin);
+}
+.benefit .container .benefit-content {
+  font-family: var(--public-font);
+}
+.benefit .container .benefit-content .benifit-title-box {
+  max-width: 60%;
+  margin: auto;
+}
+.benefit .container .benefit-content .benifit-title-box h2:nth-child(1) {
+  text-align: center;
+  color: var(--gray-yellow);
+  padding-top: 100px;
+}
+.benefit .container .benefit-content .benifit-title-box h2:nth-child(2) {
+  text-align: center;
+  color: var(--white);
+  font-size: var(--section-title);
+  padding: 10px 0;
+}
+.benefit .container .benefit-content .benifit-title-box p {
+  color: var(--white);
+  text-align: center;
+}
+.benefit .container .benefit-content .benifit-card-container .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 340px);
+  justify-content: center;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+  align-items: center;
+  margin-top: 2rem;
+}
+.benefit .container .benefit-content .benifit-card-container .cards .card {
+  background-color: #0a0039;
+  display: flex;
+  padding: 30px 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.benefit .container .benefit-content .benifit-card-container .cards .card:hover {
+  background-color: var(--gray-red);
+}
+.benefit .container .benefit-content .benifit-card-container .cards .card .check-button i {
+  color: var(--white);
+  font-family: var(--public-font);
+  padding: 10px;
+  font-size: 2rem;
+}
+.benefit .container .benefit-content .benifit-card-container .cards .card .card-info h3 {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.benefit .container .benefit-content .benifit-card-container .cards .card .card-info p {
+  color: var(--white);
+  font-size: 1rem;
+}
+.benefit .container .benefit-content .certificate .certificate-title {
+  text-align: center;
+  color: #d9d9d9;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.benefit .container .benefit-content .certificate .certificate-title::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  right: 100%;
+  background-color: white;
+}
+.benefit .container .benefit-content .certificate .certificate-title::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  left: 100%;
+  background-color: white;
+}
+.benefit .container .benefit-content .certificate .certificate-subjects {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: repeat(5, 4fr);
+  justify-items: center;
+}
+.benefit .container .benefit-content .certificate .certificate-subjects .subject {
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.benefit .container .benefit-content .certificate .certificate-subjects .subject::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 50px;
+  background-color: #fff;
+  transform: rotate(90deg);
+  left: 130%;
+}
+.benefit .container .benefit-content .certificate .certificate-subjects .subject img {
+  width: 100%;
+}
+.benefit .container .benefit-content .certificate .certificate-subjects .subject:last-child::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 50px;
+  background-color: transparent;
+  transform: rotate(90deg);
+  left: 130%;
+}
+.benefit .container .benefit-content .confuzed {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("https://template-kit.evonicmedia.com/layout60/wp-content/uploads/2024/01/cta-banner-2-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 26.813rem;
+  width: 100%;
+  transform: translate(0, 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.benefit .container .benefit-content .confuzed .confuzed-info {
+  font-family: var(--public-font);
+  text-align: center;
+  max-width: 70%;
+  margin: auto;
+}
+.benefit .container .benefit-content .confuzed .confuzed-info h2 {
+  color: var(--white);
+  font-size: var(--section-title);
+}
+.benefit .container .benefit-content .confuzed .confuzed-info p {
+  color: var(--white);
+  font-size: 1rem;
+  padding: 10px 0;
+}/*# sourceMappingURL=benifit.css.map */

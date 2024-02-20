@@ -1,0 +1,121 @@
+@import "../../global/styles/global.scss";
+.pricing {
+  width: 100%;
+  background-color: #0a0039;
+  padding: 100px 0;
+  .container {
+    width: var(--width);
+    max-width: var(--max-width);
+    padding: var(--padding);
+    min-width: var(min-width);
+    margin: var(--margin);
+    .pricing-content {
+      font-family: var(--public-font);
+      .pricing-title-box {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        h2:nth-child(1) {
+          color: var(--gray-yellow);
+          font-size: var(--subtitle);
+          font-weight: 700;
+        }
+        h2:nth-child(2) {
+          font-size: var(--section-title);
+          color: var(--white);
+          font-weight: 800;
+          padding: 10px 0;
+        }
+        p {
+          color: var(--white);
+          font-size: 1rem;
+          line-height: 1.2rem;
+        }
+      }
+      .price-card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 10px;
+        grid-column-gap: 15px;
+        margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
+        .price-card {
+          padding: 40px;
+          .premium {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+              border: none;
+              outline: none;
+              background-color: #f4d176;
+              color: black;
+              font-family: var(--public-font);
+              cursor: pointer;
+              font-size: 1rem;
+              font-weight: 600;
+              height: fit-content;
+              width: fit-content;
+              padding: 5px 27px;
+              border-radius: 14px;
+              letter-spacing: 1px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 18px 0;
+            h2 {
+              color: var(--white);
+              font-size: var(--section-title);
+              font-size: 800;
+            }
+            h1 {
+              color: var(--white);
+              font-family: var(--public-font);
+              font-size: 1.6rem;
+            }
+          }
+          .info-btn {
+            width: 100%;
+            .price-button {
+              background-color: transparent;
+              width: 100%;
+              border: 1px solid red;
+              &:hover {
+                background-color: var(--gray-red);
+                border: 1px solid transparent;
+              }
+            }
+            .yellowborder{
+                border: 1px solid  var(--gray-yellow);
+            }
+          }
+          ul {
+            list-style: none;
+            margin-top: 18px;
+            color: var(--white);
+            li {
+              color: var(--white);
+              padding: 5px 0;
+              i {
+                font-size: 1.3rem;
+                font-weight: 800;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .price-card:nth-child(2) {
+          background-color: #682fa8;
+        }
+      }
+    }
+  }
+}

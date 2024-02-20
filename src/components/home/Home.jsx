@@ -53,7 +53,7 @@ const Home = () => {
             <div className="nav__links">
               {/* mubail menu  */}
               <div className="menu">
-                <i class="ri-menu-line"></i>
+                <i className="ri-menu-line"></i>
               </div>
 
               {/* nav links  */}
@@ -122,7 +122,7 @@ const Home = () => {
                   </li>
                   <li className="hemberger-listopen">
                     <a href="#">
-                      pages <i class="ri-arrow-down-s-line"></i>
+                      pages <i className="ri-arrow-down-s-line"></i>
                     </a>
                     <div className="dropdown-container-hemberger">
                       <ul>

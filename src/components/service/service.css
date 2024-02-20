@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --gray-red: #dc284e;
+  --gray-yellow: #f4d176;
+  --white: #ffffff;
+  --black: #262626;
+  --gray-second-yellow: #f4d176;
+  --home-background: #271334;
+  --public-font: "Public Sans", sans-serif;
+  --h2-title: 5rem;
+  --section-title: 2.875rem;
+  --subtitle: 1.35rem;
+  --subtitle2: 1.25rem;
+  --p-font: 1rem;
+  --width: 100%;
+  --max-width: 1300px;
+  --padding: 0 80px;
+  --min-width: 300px;
+  --margin: auto;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --padding: 0 70px;
+  }
+}
+@media (max-width: 1100px) {
+  :root {
+    --section-title: 2.475rem;
+  }
+}
+@media (max-width: 1000px) {
+  :root {
+    --padding: 0 60px;
+    --section-title: 2.175rem;
+  }
+}
+@media (max-width: 900px) {
+  :root {
+    --padding: 0 50px;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    --h2-title: 4rem;
+  }
+}
+@media (max-width: 700px) {
+  :root {
+    --padding: 0 40px;
+    --h2-title: 3.4rem;
+  }
+}
+@media (max-width: 500px) {
+  :root {
+    --padding: 0 30px;
+    --h2-title: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  :root {
+    --padding: 0 10px;
+    --h2-title: 2.5rem;
+  }
+}
+@media (max-width: 300px) {
+  :root {
+    --padding: 0 8px;
+    --h2-title: 2rem;
+  }
+}
+.service {
+  width: 100%;
+  background-color: #271334;
+  padding: 100px 0;
+}
+.service .container {
+  padding: var(--padding);
+  min-width: var(--min-width);
+  max-width: var(--max-width);
+  margin: var(--margin);
+}
+.service .container .service-content {
+  font-family: var(--public-font);
+}
+.service .container .service-content .service-title h2:nth-child(1) {
+  text-align: center;
+  color: var(--gray-yellow);
+  font-size: var(--subtitle);
+  letter-spacing: 1px;
+}
+.service .container .service-content .service-title h2:nth-child(2) {
+  text-align: center;
+  color: var(--white);
+  font-size: var(--section-title);
+  padding: 5px 0;
+  font-weight: 800;
+}
+.service .container .service-content .service-title p {
+  text-align: center;
+  max-width: 60%;
+  width: 100%;
+  margin: auto;
+  color: var(--white);
+  font-size: var(--p-font);
+}
+.service .container .service-content .service-title .service-titlebox-container {
+  margin-top: 67px;
+}
+.service .container .service-content .service-title .service-titlebox-container .services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  overflow: hidden;
+}
+.service .container .service-content .service-title .service-titlebox-container .services .service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid transparent;
+  align-items: center;
+  padding: 30px 0px;
+  background-color: #3d2b49;
+  transition: 0.4s;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.service .container .service-content .service-title .service-titlebox-container .services .service:hover {
+  border: 1px solid var(--gray-yellow);
+}
+.service .container .service-content .service-title .service-titlebox-container .services .service h2 {
+  font-size: var(--subtitle);
+  padding: 10px 0;
+}
+.service .container .service-content .service-title .service-titlebox-container .services .service p {
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+.service .container .service-content .service-title .service-titlebox-container .services .service a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--gray-yellow);
+  font-weight: 500;
+  transition: 0.4s;
+}
+.service .container .service-content .service-title .service-titlebox-container .services .service a:hover {
+  color: var(--gray-red);
+}
+.service .container .service-content .service-title .service-titlebox-container .services .service .service-image {
+  background-color: #852d92;
+  height: 70px;
+  width: 70px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.service .container .service-content .service-title .service-titlebox-container .services .service .service-image img {
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.service .container .service-content .service-title .allservice-btn {
+  margin-top: 40px;
+  text-align: center;
+}/*# sourceMappingURL=service.css.map */
